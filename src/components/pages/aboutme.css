@@ -1,0 +1,59 @@
+.aboutstyle {
+  /* background-color:  #0b022c; */
+  padding: 50px; /* Adjust the padding as needed */
+}
+
+.about_h2 {
+  text-align: center;
+  color: #fafafc; /* Set the color of the heading as needed */
+  margin-bottom: 35px;
+  opacity: 0; /* Set initial opacity for fade-in effect */
+  animation: fadeIn 1s ease-in-out forwards; /* Add fade-in animation */
+}
+
+.about_h2:hover {
+  color: rgb(219, 219, 248);
+  cursor: pointer;
+}
+
+.about_div {
+  width: 100%;
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid rgb(3, 3, 3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  opacity: 0; /* Set initial opacity for fade-in effect */
+  animation: fadeIn 1s ease-in-out forwards, scaleIn 0.5s ease-in-out forwards; /* Add fade-in and scale-in animations */
+}
+
+.about_div:hover {
+  cursor: pointer;
+  animation: fadeIn 1s ease-in-out forwards, scaleIn 0.5s ease-in-out forwards; /* Add fade-in and scale-in animations */
+}
+
+
+h3 {
+  color: #031253;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Scale-in animation */
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}

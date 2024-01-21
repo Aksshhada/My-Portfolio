@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Navbar from "./components/navbar";
+import Home from "./components/pages/home";
+import Aboutme from "./components/pages/aboutme";
+import Projects from "./components/pages/projects"
+import Contact from "./components/pages/contact";
+import { Route, Routes } from "react-router-dom";
+import Particle from './components/particle';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Navbar />
+      <Particle />
+      <div className="container">
+      {/* <ParticleBackground /> */}
+        <Routes>
+          <Route path="/home" element = {<Home />} />
+          <Route path="/aboutme" element = {<Aboutme />} />
+          <Route path="/projects" element = {<Projects />} />
+          <Route path="/contact" element = {<Contact />} />
+        </Routes>
+      </div>
+    </>
+  )
 }
 
 export default App;
