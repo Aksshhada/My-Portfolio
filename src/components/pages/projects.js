@@ -18,6 +18,15 @@ const projects = () => {
           </p>
         </div>
         <div className="card">
+          <img src="/images/p5.png" alt="My Portfolio" />
+          <p>
+            Check out<b> My Portfolio!</b> It's like my online showcase where I share
+            my skills, experiences, and cool projects. Easy to navigate. Explore
+            what I do, what I've learned, and some neat things I've created
+            using React. Let's connect and chat about exciting opportunities!
+          </p>
+        </div>
+        <div className="card">
           <img src="/images/p2.png" alt="Cafe Menu App" />
           <p>
             Discover the essence of my <b>Cafe Menu App</b>, a delightful creation
