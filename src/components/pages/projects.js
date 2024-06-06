@@ -5,12 +5,13 @@ const projects = () => {
   return (
 
     <div className="projects-container">
-      <h1 className="projects-title">Projects</h1>
+      <h1 className="projects-title">PROJECTS</h1>
       <div className="card-container">
         <div className="card">
           <img src="/images/p1.png" alt="Grocery Store App" />
+          <h2>Grocery Store App</h2>
           <p>
-            Introducing my <b>Grocery Store App</b>, a seamless and user-friendly
+            Introducing my Grocery Store App, a seamless and user-friendly
             solution built with React. Easily manage your shopping list by
             entering groceries one by one. Streamline your shopping experience,
             stay organized, and never miss an item with this intuitive and
