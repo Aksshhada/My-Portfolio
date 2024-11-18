@@ -1,11 +1,9 @@
-import "./App.css";
 import Navbar from "./components/navbar";
+import Particle from "./components/particle";
 import Home from "./components/pages/home";
 import Aboutme from "./components/pages/aboutme";
-import Projects from "./components/pages/projects"
+import Projects from "./components/pages/projects";
 import Contact from "./components/pages/contact";
-import { Route, Routes } from "react-router-dom";
-import Particle from './components/particle';
 
 function App() {
   return (
@@ -13,16 +11,22 @@ function App() {
       <Navbar />
       <Particle />
       <div className="container">
-      {/* <ParticleBackground /> */}
-        <Routes>
-          <Route path="/home" element = {<Home />} />
-          <Route path="/aboutme" element = {<Aboutme />} />
-          <Route path="/projects" element = {<Projects />} />
-          <Route path="/contact" element = {<Contact />} />
-        </Routes>
+        {/* Create sections with IDs corresponding to the navbar links */}
+        <section id="home">
+          <Home />
+        </section>
+        <section id="aboutme">
+          <Aboutme />
+        </section>
+        <section id="projects">
+          <Projects />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
       </div>
     </>
-  )
+  );
 }
 
 export default App;

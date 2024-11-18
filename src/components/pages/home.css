@@ -1,61 +1,3 @@
-    /* #particles-js {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .content {
-    position: relative;
-    z-index: 1;
-  }
-
-   .home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 100px;
-    z-index: 1;
-    color: white;
-  }
-  
-  .icons {
-    margin-top: 25px;
-    align-items: center;
-    text-align: center;
-    justify-content: center; 
-  
-  .icons ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 40px;
-    align-items: center;
-    text-align: center;
-    justify-content: center; 
-  }
-  
-  .icons a {
-    font-size: 24px; 
-    color: #4a8dcc;
-    align-items: center;
-    text-align: center;
-    justify-content: center; 
-  }
-    */
-
-
-
-
-
-
-    
-
-
-
   #particles-js {
     position: fixed;
     top: 0;
@@ -91,6 +33,15 @@
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 1s ease-out, transform 1s ease-out;
+    color: white;
+  }
+
+  .sentence h3{
+    color: white;
+  }
+
+  .sentence2 h1{
+    font-size: 54px;
   }
   
   .sentence.visible {
@@ -122,105 +73,5 @@
   }
   
   .icons a:hover {
-    color: #82bcec;
+    color: #84cff1;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* #particles-js {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .content {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-  }
-  
-  .home-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    z-index: 1;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .scrolling-text {
-    display: flex;
-    white-space: nowrap;
-    animation: scroll 10s linear infinite;
-  }
-  
-  @keyframes scroll {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-  
-  .sentence {
-    display: inline-block;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-  }
-  
-  .sentence.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  .icons {
-    margin-top: 25px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-  }
-  
-  .icons ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 40px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-  }
-  
-  .icons a {
-    font-size: 24px;
-    color: white;
-    transition: color 0.3s;
-  }
-  
-  .icons a:hover {
-    color: #82bcec;
-  } */
-  

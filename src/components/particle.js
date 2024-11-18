@@ -27,7 +27,7 @@ const ParticleBG = () => {
                 options={{
                     background: {
                         color: {
-                            value: "#51002A",
+                            value: "#51005E",
                         },
                     },
                     fpsLimit: 120,
@@ -55,14 +55,14 @@ const ParticleBG = () => {
                     },
                     particles: {
                         color: {
-                            value: "#999999",
+                            value: "#99999",
                         },
                         links: {
-                            color: "#1ecbe1",
-                            distance: 50,
+                            color: "#1ea1b5",
+                            distance: 90,
                             enable: true,
-                            opacity: 0.5,
-                            width: 1,
+                            opacity: 0.9,
+                            width: 4,
                         },
                         move: {
                             direction: "none",
