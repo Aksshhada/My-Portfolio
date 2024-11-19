@@ -15,7 +15,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    color: white;
+    color: rgb(24, 11, 54);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     overflow: hidden; 
   }
@@ -33,11 +33,11 @@
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 1s ease-out, transform 1s ease-out;
-    color: white;
+    color: rgb(24, 11, 54);
   }
 
   .sentence h3{
-    color: white;
+    color: rgb(24, 11, 54);
   }
 
   .sentence2 h1{
@@ -68,10 +68,21 @@
   
   .icons a {
     font-size: 24px;
-    color: white;
+    color: rgb(6, 67, 236);
     transition: color 0.3s;
   }
   
   .icons a:hover {
-    color: #84cff1;
+    color: #72c8f0;
   }
+
+  .downArrow {
+    cursor: pointer;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    transform: translateX(-50%); 
+    color: #030000; 
+  }
+  

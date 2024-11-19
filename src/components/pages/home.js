@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { GoChevronDown } from "react-icons/go";
 import './home.css';
 
 const Home = () => {
@@ -37,6 +38,12 @@ const Home = () => {
               </a>
             </li>
           </ul>
+          <div className='downArrow'>
+            <ul>
+              <li><GoChevronDown />
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
