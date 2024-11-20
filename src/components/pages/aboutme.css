@@ -1,20 +1,33 @@
-.aboutstyle {
+/* .aboutstyle {
   /* background-color:  #0b022c; */
-  padding: 50px; /* Adjust the padding as needed */
+ /* padding: 50px;  Adjust the padding as needed */
+/*} */
+
+
+.aboutstyle {
+  width: 100%; /* Full width */
+  min-height: 100vh; /* Full viewport height */
+  background-size: cover; /* Make the image cover the entire background */
+  background-position: center; /* Center the background */
+  background-repeat: no-repeat; /* Prevent repeating */
+  display: flex; /* Use flexbox if you want to center content */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  padding: 50px;
+  box-sizing: border-box;
 }
+
+
 
 .about_h2 {
   text-align: center;
-  color: #fafafc; /* Set the color of the heading as needed */
+  color: #030333; /* Set the color of the heading as needed */
   margin-bottom: 35px;
   opacity: 0; /* Set initial opacity for fade-in effect */
   animation: fadeIn 1s ease-in-out forwards; /* Add fade-in animation */
 }
 
-.about_h2:hover {
-  color: rgb(219, 219, 248);
-  cursor: pointer;
-}
 
 .about_div {
   width: 100%;
@@ -24,9 +37,16 @@
   border: 1px solid rgb(3, 3, 3);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
-  opacity: 0; /* Set initial opacity for fade-in effect */
-  animation: fadeIn 1s ease-in-out forwards, scaleIn 0.5s ease-in-out forwards; /* Add fade-in and scale-in animations */
+  opacity: 0; /* Start as hidden */
+  transform: translateY(30px); /* Start off-screen */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
+
+.about_div.visible {
+  opacity: 1;
+  transform: translateY(0); /* Slide in */
+}
+
 
 .about_div:hover {
   cursor: pointer;
@@ -57,3 +77,44 @@ h3 {
     transform: scale(1);
   }
 }
+
+
+.AboutMe{
+  /* width: 100%; */
+  background-color: rgb(3, 0, 0);
+  margin-bottom: 40px;
+  /* padding: 90px; */
+  width: 100vw; /* Full width of the viewport */
+  height: 50vh; /* Full height of the viewport */
+  align-items: center;
+  display: flex; /* Flexbox layout */
+  justify-content: center; 
+  padding-right: 9px;
+  opacity: 0; /* Start as hidden */
+  transform: translateY(30px); /* Start off-screen */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+
+}
+
+
+.AboutMe.visible {
+  opacity: 1;
+  transform: translateY(0); /* Slide in */
+}
+
+
+.AboutMe2{
+  color: white;
+}
+
+
+
+html, body {
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
+  overflow-x: hidden; /* Disable horizontal scrolling */
+  width: 100%; /* Ensure body and html take up full width */
+  height: 100%;
+}
+
+
