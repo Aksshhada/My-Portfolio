@@ -84,7 +84,7 @@ const AboutMe = () => {
           I am final year Engineering Student from NBNSTIC Pune. I am interested in fullstack web development, AI/ML, Blockchain technologies.
         </p>
       </div>
-
+      <div className="about_boxes">
       <div className="about_div">
         <h3>Frontend Developer</h3>
         <p className="about_h3">
@@ -98,6 +98,9 @@ const AboutMe = () => {
           As a beginner backend developer, I am enthusiastic...
         </p>
       </div>
+      </div>
+
+
 
       <div className="about_div">
         <h3 className="about_h3">UI Designer</h3>
