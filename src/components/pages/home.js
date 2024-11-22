@@ -9,7 +9,7 @@ const Home = () => {
     sentences.forEach((sentence, index) => {
       setTimeout(() => {
         sentence.classList.add('visible');
-      }, index * 1500); // Adjust the timing as needed
+      }, index * 1500);
     });
   }, []);
 

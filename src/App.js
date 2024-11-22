@@ -11,7 +11,7 @@ function App() {
       <Navbar />
       <Particle />
       <div className="container">
-        {/* Create sections with IDs corresponding to the navbar links */}
+        
         <section id="home">
           <Home />
         </section>

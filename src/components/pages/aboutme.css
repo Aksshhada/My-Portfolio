@@ -1,71 +1,98 @@
-.aboutstyle {
-  width: 100%; /* Full width */
-  min-height: 100vh; /* Full viewport height */
-  background-size: cover; /* Make the image cover the entire background */
-  background-position: center; /* Center the background */
-  background-repeat: no-repeat; /* Prevent repeating */
-  display: flex; /* Use flexbox if you want to center content */
-  flex-direction: column; /* Stack items vertically */
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
-  padding: 50px;
+Global Styles
+html, body {
+  margin: 0; 
+  padding: 0; 
+  overflow-x: hidden; 
+  width: 100%; 
+  height: 100%;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
 }
 
+.aboutstyle {
+  width: 100%;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  box-sizing: border-box;
+}
 
 .about_h2 {
   text-align: center;
-  color: #030333; /* Set the color of the heading as needed */
-  margin-bottom: 35px;
-  opacity: 0; /* Set initial opacity for fade-in effect */
-  animation: fadeIn 1s ease-in-out forwards; /* Add fade-in animation */
+  color: #030333; 
+  margin-top: 60px;
+  background-color: white;
+  width: 100vw;
+  opacity: 0; 
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
-
-.about_div {
-  width: 45%; /* Full width */
-  max-width: 600px; /* Optional: Limit width for readability */
-  margin: 20px 0; /* Add vertical spacing between the boxes */
-  background-color: white;
-  padding: 20px;
-  border: 1px solid rgb(3, 3, 3);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
-  opacity: 0; /* Start as hidden */
-  transform: translateY(30px); /* Start off-screen */
+.AboutMe {
+  background-color: rgb(4, 1, 22);
+  margin-bottom: 10px;
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 9px;
+  border: 5px solid #e3e6e9;
+  opacity: 0; 
+  transform: translateY(30px); 
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
-
-.about_boxes {
-  display: flex; /* Arrange children side by side */
-  justify-content: space-between; /* Add spacing between the boxes */
-  gap: 20px; /* Add spacing between the boxes */
-  width: 100%; /* Full width */
-  max-width: 1200px; /* Optional: Limit width for better alignment */
+.AboutMe.visible {
+  opacity: 1;
+  transform: translateY(0); 
 }
 
+.AboutMe2 {
+  color: white;
+}
 
+.about_boxes {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 90px; 
+  width: 100vw; 
+  background-color: white; 
+  border: 5px solid #c7ced3c7;
+
+}
+
+.about_div {
+  width: 100%; 
+  max-width: 550px;
+  margin-bottom: 90px;
+  background-color: rgb(250, 237, 242);
+  padding: 40px;
+  border: 2px solid rgb(3, 3, 3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 40px; 
+  opacity: 0;
+  transform: translateY(30px);
+  transition: transform 0.5s ease-in-out, opacity 1s ease-in-out;
+  cursor: pointer;
+}
 
 .about_div.visible {
   opacity: 1;
-  transform: translateY(0); /* Slide in */
+  transform: translateY(0); 
 }
 
-
-/* .about_div:hover {
-  cursor: pointer;
-  animation: fadeIn 1s ease-in-out forwards, scaleIn 0.5s ease-in-out forwards; /* Add fade-in and scale-in animations */
-/*} */
-
+.about_div:hover{
+  transform: scale(1.05);
+}
 
 h3 {
   color: #031253;
 }
 
-/* Fade-in animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -75,7 +102,6 @@ h3 {
   }
 }
 
-/* Scale-in animation */
 @keyframes scaleIn {
   from {
     transform: scale(0.8);
@@ -83,40 +109,4 @@ h3 {
   to {
     transform: scale(1);
   }
-}
-
-
-.AboutMe{
-  background-color: rgb(3, 0, 0);
-  margin-bottom: 40px;
-  width: 100vw; /* Full width of the viewport */
-  height: 50vh; /* Full height of the viewport */
-  align-items: center;
-  display: flex; /* Flexbox layout */
-  justify-content: center; 
-  padding-right: 9px;
-  opacity: 0; /* Start as hidden */
-  transform: translateY(30px); /* Start off-screen */
-  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-
-}
-
-
-.AboutMe.visible {
-  opacity: 1;
-  transform: translateY(0); /* Slide in */
-}
-
-
-.AboutMe2{
-  color: white;
-}
-
-
-html, body {
-  margin: 0; /* Remove default margins */
-  padding: 0; /* Remove default padding */
-  overflow-x: hidden; /* Disable horizontal scrolling */
-  width: 100%; /* Ensure body and html take up full width */
-  height: 100%;
 }

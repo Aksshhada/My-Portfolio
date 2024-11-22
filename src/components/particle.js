@@ -45,7 +45,7 @@ const ParticleBG = () => {
                         },
                         modes: {
                             push: {
-                                quantity: 4,
+                                quantity: 9,
                             },
                             repulse: {
                                 distance: 200,
@@ -62,7 +62,7 @@ const ParticleBG = () => {
                             distance: 90,
                             enable: true,
                             opacity: 0.9,
-                            width: 5,
+                            width: 7,
                         },
                         move: {
                             direction: "none",
