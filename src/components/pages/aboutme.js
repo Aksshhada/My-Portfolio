@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Gi3dGlasses } from "react-icons/gi";
 import "./aboutme.css";
 
 const AboutMe = () => {
@@ -52,6 +53,10 @@ const AboutMe = () => {
             As a beginner backend developer, I am enthusiastic about building
             robust server-side applications.
           </p>
+        </div>
+
+        <div className="glasses">
+          <Gi3dGlasses style={{ fontSize: "100px", color: "FF4545" }} />
         </div>
 
         <div className="about_div">
