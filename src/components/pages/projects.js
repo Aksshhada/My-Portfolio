@@ -1,5 +1,7 @@
 import React from "react";
 import "./projects.css";
+import { FaGithub } from "react-icons/fa";
+
 
 const projects = () => {
   return (
@@ -9,7 +11,10 @@ const projects = () => {
       <div className="card-container">
         <div className="card">
           <img src="/images/p1.png" alt="Grocery Store App" />
-          <h2>Grocery Store App</h2>
+
+          <div className="card_title">
+            <h2>Grocery Store App</h2>
+           
           <p>
             Introducing my Grocery Store App, a seamless and user-friendly
             solution built with React. Easily manage your shopping list by
@@ -17,7 +22,20 @@ const projects = () => {
             stay organized, and never miss an item with this intuitive and
             efficient application. Happy shopping made simple!
           </p>
+          
+          <a 
+              href="https://github.com/yourusername/grocery-store-app" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="github-link"
+            >
+              <FaGithub size={30} color="#333" />
+            </a>
+
         </div>
+        </div>
+
+
         <div className="card">
           <img src="/images/p5.png" alt="My Portfolio" />
           <p>

@@ -4,7 +4,7 @@
 }
 
 .projects-title {
-  color: #fdfafa;
+  color: #030333;
   font-size: 40px;
   margin-bottom: 20px;
 }
@@ -50,6 +50,14 @@
   font-size: 16px;
   line-height: 1.5;
 }
+
+.card_title h2 {
+  font-size: 24px;
+  color: #030333;
+  margin-bottom: 15px; /* Add spacing below title */
+  text-align: center; /* Center-align the title */
+}
+
 
 @keyframes fadeIn {
   from {

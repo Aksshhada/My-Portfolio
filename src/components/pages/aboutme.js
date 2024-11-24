@@ -7,6 +7,7 @@ const AboutMe = () => {
     const aboutDivs = document.querySelectorAll(".about_div");
     const aboutMe = document.querySelector(".AboutMe");
 
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
