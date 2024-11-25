@@ -27,9 +27,9 @@ const projects = () => {
               href="https://github.com/yourusername/grocery-store-app" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="github-link"
+              className="github_link"
             >
-              <FaGithub size={30} color="#333" />
+              <FaGithub size={25} color="#333" />
             </a>
 
         </div>
@@ -38,15 +38,28 @@ const projects = () => {
 
         <div className="card">
           <img src="/images/p5.png" alt="My Portfolio" />
+          <div className="card_title">
+            <h2>Grocery Store App</h2>
           <p>
             Check out<b> My Portfolio!</b> It's like my online showcase where I share
             my skills, experiences, and cool projects. Easy to navigate. Explore
             what I do, what I've learned, and some neat things I've created
             using React. Let's connect and chat about exciting opportunities!
           </p>
+          <a 
+              href="https://github.com/yourusername/grocery-store-app" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="github_link"
+            >
+              <FaGithub size={25} color="#333" />
+            </a>
+          </div>
         </div>
         <div className="card">
           <img src="/images/p2.png" alt="Cafe Menu App" />
+          <div className="card_title">
+            <h2>Grocery Store App</h2>
           <p>
             Discover the essence of my <b>Cafe Menu App</b>, a delightful creation
             using React. Immerse yourself in a digital menu experience that
@@ -55,24 +68,55 @@ const projects = () => {
             savory treats, all elegantly presented in this immersive
             React-powered cafe menu.
           </p>
+          <a 
+              href="https://github.com/yourusername/grocery-store-app" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="github_link"
+            >
+              <FaGithub size={25} color="#333" />
+            </a>
+        </div>
         </div>
         <div className="card">
           <img src="/images/p3.png" alt="My Portfolio" />
+          <div className="card_title">
+            <h2>Grocery Store App</h2>
           <p>
             Check out<b> My Portfolio!</b> It's like my online showcase where I share
             my skills, experiences, and cool projects. Easy to navigate. Explore
             what I do, what I've learned, and some neat things I've created
             using React. Let's connect and chat about exciting opportunities!
           </p>
+          <a 
+              href="https://github.com/yourusername/grocery-store-app" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="github_link"
+            >
+              <FaGithub size={25} color="#333" />
+            </a>
+          </div>
         </div>
         <div className="card">
           <img src="/images/p4.png" alt="Animated Login Form" />
+          <div className="card_title">
+            <h2>Grocery Store App</h2>
           <p>
             Presenting my <b>Animated Login Form</b> created with HTML and CSS Experience a
             delightful and engaging login process with smooth animations. Enjoy
             the simplicity of this user-friendly form, making access to your
             account both visually appealing and easy.
           </p>
+          <a 
+              href="https://github.com/yourusername/grocery-store-app" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="github_link"
+            >
+              <FaGithub size={25} color="#333" />
+            </a>
+        </div>
         </div>
       </div>
     </div>
